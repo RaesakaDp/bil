@@ -1,9 +1,12 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">-->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="css/porto.css">
     <link rel="stylesheet" href="css/carousel.css">
@@ -11,11 +14,22 @@
     <link rel="stylesheet" href="css/font.css">
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" 
+    <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" 
     rel="stylesheet" 
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" 
-    crossorigin="anonymous">
+    crossorigin="anonymous">-->
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+    crossorigin="anonymous"
+  />
+  <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
     <link rel="shortcut icon" href="svg/camera-reels-fill.svg">
+    
     <title>HAPPY BIRTHDAY!</title>
   </head>
   <body>
@@ -23,24 +37,24 @@
     <div class="navbar">
       <ul class="nav justify-content-center fixed-top">
         <li class="nav-item">
-          <a class="nav-link" href="">Home</a>
+          <a class="nav-link" href="#home">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="">Mode</a>
+          <a class="nav-link" href="#mode">Mode</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="">Gallery</a>
+          <a class="nav-link" href="#galeri">Gallery</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="">Best Capt</a>
+          <a class="nav-link" href="#custom-cards">Best Capt</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="">Wishes</a>
+          <a class="nav-link" href="#wishes">Wishes</a>
         </li>
       </ul>
     </div>
 
-    <div class="carousel"> 
+    <div class="carousel" id="home"> 
       <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
@@ -73,7 +87,7 @@
       </div>
     </div>   
     
-  <div class="container marketing">
+  <div class="container marketing" id="mode">
     <h2 class="pb-2 border-bottom mb-5 text-center fw-bolder">3 Mode Bilqis</h2>
     <!-- Three columns of text below the carousel -->
     <div class="row">
@@ -82,26 +96,26 @@
        
         <h2>Rara</h2>
         <p>Dimana Rani tidak patut untuk di contoh</p>
-        <p><a class="btn btn-secondary" href="#">Klik Aku! &raquo;</a></p>
+        <p><a class="btn btn-secondary" href="#home">Klik Aku! &raquo;</a></p>
       </div><!-- /.col-lg-4 -->
       <div class="col-lg-4">
         <img src="img/halu1.jpg" class="bd-placeholder-img rounded-circle" width="140" height="140" alt="">
         <h2>Rachel</h2>
         <p>Emang kadang suka begitu, Menghalu disuapin mas faris wkwkwkwkkwk</p>
-        <p><a class="btn btn-secondary" href="#">Klik Aku! &raquo;</a></p>
+        <p><a class="btn btn-secondary" href="#home">Klik Aku! &raquo;</a></p>
       </div><!-- /.col-lg-4 -->
       <div class="col-lg-4">
         <img src="img/Untitled-2 copy.jpg" class="bd-placeholder-img rounded-circle" width="140" height="140" alt="">
         <h2>Bilqis</h2>
         <p>Lek ini sih gak bisa dipungkiri emang lucuuu bangettt anaknyaaa, gemesinnn gituu</p>
-        <p><a class="btn btn-secondary" href="#">Klik Aku! &raquo;</a></p>
+        <p><a class="btn btn-secondary" href="#home">Klik Aku! &raquo;</a></p>
       </div><!-- /.col-lg-4 -->
     </div><!-- /.row -->
     </div>
      
     <div class="b-example-divider"></div>
     
-  <div class="container card-group mt-lg-5">
+  <div class="container card-group mt-lg-5" id="galeri">
 
   <div class="card">
     <img src="img/py.png" class="card-img-top" alt="...">
