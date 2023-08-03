@@ -21,13 +21,13 @@ body {
 }
 
 .navbar .nav {
-  background-color: rgba(111, 137, 243, 0.1);
+  background-color: rgba(35, 35, 36, 0.1);
   font-weight: 300;
   height: 50px;
   width: 380px;
   border-radius: 20px;
   box-shadow: inset 1px 1px 3px rgba(28, 27, 31, 0.6),
-    2px 2px 5px rgba(140, 135, 158, 0.8);
+    2px 2px 5px rgba(32, 32, 32, 0.8);
   backdrop-filter: blur(5px);
 
   margin-top: 10px;
@@ -56,6 +56,24 @@ body {
   opacity: 1;
   text-shadow: 0 0 30px #dddddd, 0 -1px 1px rgba(246, 246, 246, 0.2);
 }
+
+/* Garis Bawah Hover
+.navbar .nav a:hover {
+  color: #062b7c;
+}
+
+.navbar .nav a:hover {
+  color: #062b7c;
+}
+.navbar .nav a::after {
+  content: "";
+  display: block;
+  padding-bottom: 0.5rem;
+  border-bottom: #062b7c;
+  transform: scaleX(0);
+  transition: 0.2s linear;
+}*/
+
 .navbar .nav a:active {
   color: #f6f6f6;
 }
@@ -73,16 +91,34 @@ body {
 /* Navbar End */
 
 /** Responsive */
+/* laptop */
+@media (max-width: 1366px) {
+  html {
+    font-size: 97%;
+  }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  html {
+    font-size: 90.5%;
+  }
+}
+
 /** HandPhone */
 @media screen and (max-width: 576px) {
+  html {
+    font-size: 80.5%;
+  }
   .navbar .nav {
-    background-color: rgba(111, 137, 243, 0.1);
+    background-color: rgba(35, 35, 36, 0.1);
     font-weight: 300;
-    height: 40px;
-    width: 300px;
+    /*border-bottom: 1px solid #513c28;*/
+    height: 50px;
+    width: 380px;
     border-radius: 20px;
     box-shadow: inset 1px 1px 3px rgba(28, 27, 31, 0.6),
-      2px 2px 5px rgba(140, 135, 158, 0.8);
+      2px 2px 5px rgba(32, 32, 32, 0.8);
     backdrop-filter: blur(5px);
   }
 
@@ -90,7 +126,7 @@ body {
     padding: 4px 12px;
   }
   .navbar .nav a {
-    font-size: 13px;
+    font-size: 14px;
   }
 
   .carousel,
@@ -100,10 +136,10 @@ body {
     height: 250px;
     width: 500px;
   }
-  .carousel-caption {
-    font-size: 5rem;
+  .carousel-caption h1 {
+    font-size: 1rem;
     padding-bottom: 6rem;
-    padding: 60px;
+    padding: 10px;
   }
   .carousel-inner {
     height: 576px;
