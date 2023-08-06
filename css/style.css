@@ -1,3 +1,24 @@
+/* Font H1, WISH, SPAN */
+@font-face {
+  font-family: Happy;
+  src: url("../font/happyBirthday.ttf");
+}
+
+.carousel-caption h1 {
+  font-size: 15rem;
+  padding-bottom: 12rem;
+  font-family: Happy;
+}
+
+#wishes h2 {
+  font-size: 5rem;
+}
+
+#wishes span {
+  font-style: italic;
+}
+/* END Font H1, WISH, SPAN */
+
 html {
   scroll-behavior: smooth;
 }
@@ -16,7 +37,7 @@ body {
 
 /*navbar*/
 .navbar {
-  padding: 0px;
+  padding-top: 10px;
   background-color: black;
 }
 
@@ -64,7 +85,7 @@ body {
 
 .navbar .nav a:hover {
   color: #062b7c;
-}
+}*/
 .navbar .nav a::after {
   content: "";
   display: block;
@@ -72,7 +93,7 @@ body {
   border-bottom: #062b7c;
   transform: scaleX(0);
   transition: 0.2s linear;
-}*/
+}
 
 .navbar .nav a:active {
   color: #f6f6f6;
@@ -89,6 +110,46 @@ body {
   align-items: center;
 }
 /* Navbar End */
+
+/* Carousel */
+.carousel {
+  margin-bottom: 4rem;
+}
+
+.carousel img {
+  filter: brightness(50%);
+}
+
+.carousel-item {
+  height: 40rem;
+}
+
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
+
+.marketing .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.marketing h2 {
+  font-weight: 400;
+}
+
+.marketing .col-lg-4 p {
+  margin-right: 0.75rem;
+  margin-left: 0.75rem;
+}
+
+/* End Carousel */
+
+/* Porto*/
+.featurette-divider {
+  margin: 2rem 0;
+}
+/*End Porto*/
 
 /** Responsive */
 /* laptop */
@@ -108,14 +169,14 @@ body {
 /** HandPhone */
 @media screen and (max-width: 576px) {
   html {
-    font-size: 80.5%;
+    font-size: 88.5%;
   }
   .navbar .nav {
     background-color: rgba(35, 35, 36, 0.1);
     font-weight: 300;
-    /*border-bottom: 1px solid #513c28;*/
+    border-bottom: 1px solid #513c28;
     height: 50px;
-    width: 380px;
+    width: 300px;
     border-radius: 20px;
     box-shadow: inset 1px 1px 3px rgba(28, 27, 31, 0.6),
       2px 2px 5px rgba(32, 32, 32, 0.8);
@@ -129,17 +190,47 @@ body {
     font-size: 14px;
   }
 
-  .carousel,
-  .carousel img,
-  .carousel-item,
-  .carousel slide {
-    height: 250px;
-    width: 500px;
+  .navbar .nav a:active {
+    color: #f6f6f6;
   }
+
+  .navbar .nav a::after {
+    content: "";
+    display: block;
+    padding-bottom: 0.5rem;
+    border-bottom: #062b7c;
+    transform: scaleX(0);
+    transition: 0.2s linear;
+  }
+
+  .navbar .nav a:hover {
+    color: #062b7c;
+    opacity: 1;
+    text-shadow: 0 0 30px #dddddd, 0 -1px 1px rgba(246, 246, 246, 0.2);
+  }
+
+  .container h2 {
+    padding-top: 3rem;
+  }
+
+  .carousel,
+  .carousel-item {
+    height: 340px;
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    height: auto;
+  }
+
+  .carousel-item img {
+    height: 380px;
+  }
+
   .carousel-caption h1 {
-    font-size: 1rem;
-    padding-bottom: 6rem;
-    padding: 10px;
+    font-size: 6rem;
+    padding-bottom: 4rem;
+    font-family: Happy;
   }
   .carousel-inner {
     height: 576px;
