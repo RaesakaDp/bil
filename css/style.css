@@ -142,8 +142,154 @@ body {
   margin-right: 0.75rem;
   margin-left: 0.75rem;
 }
-
 /* End Carousel */
+
+/* Pict*/
+
+.pict {
+  padding-top: 3rem;
+  background-color: #f6f6f6;
+  min-height: 100vh;
+  display: grid;
+  align-items: center;
+  position: relative;
+}
+
+.pict .card-container {
+  display: grid;
+  justify-content: center;
+  padding: 0;
+}
+
+.pict .card,
+.pict .gradasi,
+.pict .card img {
+  height: 360px;
+  width: 260px;
+}
+
+.pict .card {
+  background-color: #f6f6f6;
+  overflow: hidden;
+  border-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.pict .gradasi {
+  position: absolute;
+  background: linear-gradient(
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.8)
+  );
+  opacity: 0;
+  transition: 0.4s;
+}
+
+.pict .card:hover .gradasi {
+  opacity: 1;
+}
+
+.pict .card figcaption {
+  color: #f6f6f6;
+  font-size: 1.4rem;
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.6);
+  transform: translate(0, -55px);
+  font-family: "Poppins", sans-serif;
+}
+
+.pict .card,
+.pict .card img,
+.pict .card figcaption {
+  transition: 0.4s;
+}
+
+.pict .card:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  transform: scale(1.03);
+}
+
+.pict .card:hover img {
+  transform: scale(1.1);
+  filter: brightness(0.8) grayscale(0.2);
+}
+
+.pict .card:hover figcaption {
+  transform: translate(0, -120px);
+  font-size: 2rem;
+}
+
+.pict {
+  overflow: hidden;
+}
+
+.pict .tdatang,
+.pict .tpergi {
+  padding-bottom: 5px;
+  position: absolute;
+  z-index: 0;
+  font-size: 27vw;
+  font-weight: 900;
+  color: #1c1b1f;
+  filter: blur(1.8px);
+  opacity: 0.7;
+  left: 0;
+  right: 0;
+  margin: 4rem auto 0;
+  text-align: center;
+}
+
+.pict .tdatang {
+  transform: translateX(-100vw) scaleY(1.2);
+}
+
+.pict .tpergi {
+  transform: translateX(100vw) scaleY(1.2);
+  opacity: 0;
+  transition: transform 0.4s ease, opacity 0.2s 0.4s ease;
+}
+
+.card-container {
+  position: relative;
+  z-index: 10;
+}
+
+.pict .card-container.satu:hover ~ .tdatang.satu,
+.pict .card-container.dua:hover ~ .tdatang.dua,
+.pict .card-container.tiga:hover ~ .tdatang.tiga {
+  transform: translateX(0vw) scaleY(1.2);
+  transition: transform 0.4s ease;
+}
+
+.pict .card-container.satu:hover ~ .tpergi.satu,
+.pict .card-container.dua:hover ~ .tpergi.dua,
+.pict .card-container.tiga:hover ~ .tpergi.tiga {
+  transform: translateX(0vw) scaleY(1.2);
+  opacity: 0.8;
+}
+
+.education .hidden-pict-2 {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translate(-100%);
+  transition: all 2s;
+}
+
+.pict .card-container:nth-child(3) {
+  transition-delay: 200ms;
+}
+
+.pict .card-container:nth-child(2) {
+  transition-delay: 400ms;
+}
+
+.pict .card-container:nth-child(1) {
+  transition-delay: 600ms;
+}
+
+/* End Pict */
 
 /* Porto*/
 .featurette-divider {
