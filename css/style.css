@@ -38,7 +38,7 @@ body {
 /*navbar*/
 .navbar {
   padding-top: 10px;
-  background-color: black;
+  background-color: rgb(156, 155, 155);
 }
 
 .navbar .nav {
@@ -370,7 +370,7 @@ body {
   }
 
   .carousel-item img {
-    height: 380px;
+    height: 340px;
   }
 
   .carousel-caption h1 {
